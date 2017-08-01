@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-application-wizard",
+  "name": "bs-app-wizard",
   "version": "0.0.1",
   "main": [
     "src/bootstrap-wizard.css",
@@ -16,7 +16,7 @@
   "keywords": [
     "twitter-bootstrap",
     "bootstrap",
-    "application wizard",
+    "bootstrap wizard",
     "wizard"
   ],
   "license": "MIT",
