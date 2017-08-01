@@ -379,7 +379,7 @@
                     '<div class="modal-content wizard-content">',
                         '<div class="modal-header wizard-header">',
                             '<button type="button" class="close wizard-close" aria-hidden="true">&times;</button>',
-                            '<h3 class="modal-title wizard-title"></h3>',
+                            '<h4 class="modal-title wizard-title"></h4>',
                             '<span class="wizard-subtitle"></span>',
                         '</div>',
                         '<div class="modal-body wizard-body">',
@@ -454,6 +454,7 @@
         _create: function(markup) {
             this.markup = $(markup);
             this.title					= 	this.markup.data('title');
+            this.subTitle				= 	this.markup.data('sub-title');
             this.submitCards 			= 	this.markup.find(".wizard-error,.wizard-failure,.wizard-success,.wizard-loading");
             this.el						=	$(this.wizard_template.join('\n'));
             $('body').append(this.el);
@@ -532,6 +533,10 @@
             
             if ( this.title.length != 0 ) {
                 this.setTitle(this.title);
+            }
+            
+            if ( this.subTitle.length != 0 ) {
+                this.setSubtitle(this.subTitle);
             }
             
             this.on("submit", this._defaultSubmit);
