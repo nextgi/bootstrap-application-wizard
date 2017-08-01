@@ -1,0 +1,32 @@
+{
+  "name": "bootstrap-application-wizard",
+  "version": "0.0.1",
+  "main": [
+    "src/bootstrap-wizard.css",
+    "src/bootstrap-wizardtagsuggest.js"
+  ],
+  "dependencies": {
+    "jquery": ">=1.8.3"
+  },
+  "homepage": "https://github.com/nextgi/bootstrap-application-wizard",
+  "authors": [
+    "Nextgi"
+  ],
+  "description": "A Boostrap based Application Wizard",
+  "keywords": [
+    "twitter-bootstrap",
+    "bootstrap",
+    "application wizard",
+    "wizard"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demo"
+  ]
+}
